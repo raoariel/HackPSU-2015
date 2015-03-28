@@ -1,11 +1,5 @@
 <%= render partial: 'layouts/header' %>
 <%= render partial: 'layouts/carousel' %>
-<div class="container">
-	<%= form_tag(static_pages_results_path, method: :get) do %>
-		<%= text_field_tag :url, nil, placeholder: 'Enter the raw github url' %>
-		<%= submit_tag :submit %>
-	<% end %>
-</div>
 
 <div class="row" id="bigCallout">
 				<div class="col-12">
