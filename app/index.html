@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Git A Translation</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="//apis.google.com/js/client:platform.js" async defer></script>
+  </head>
+  <body>
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" href="font-awesome.min.css">
+    <script type="text/javascript">
+      function signinCallback(authResult) {
+        console.log(authResult);
+        document.cookie="code="+authResult['code'];
+        url = "/new_event";
+        console.log(url);
+        window.location.replace(url);       
+      }
+    </script>
+    <!--
+    THIS IS THE BACKGROUND
+    -->
+  	<div class="banner" id="top">
+  		<div id="logo">
+	  		<a href="/index.html">
+			 </a>
+		  </div>
+  	</div>
+
+  	<a href="#start" id="scroll_link">
+  		<div class="see_more" id="scroll_to">
+  			<center>\\    LEARN MORE    // </center>
+  		</div>
+  	</a>
+
+  	<div class="main" id="start">
+  		<div class="banner_overlay">
+  			<center>
+	  			<div class="banner_title">
+	  				<a href="pass.html" form="get_url" class="submitButton">App Title</a>
+	  			</div>
+          <!--<form action="demo_form.asp" method="get" id="get_url">-->
+          <form id="get_url">
+          <input type="url" id="githubURL" name="githubURL" size="70" placeholder="https://github.com/nayak16/TartanHacks-2015/blob/master/README.md" required> <br>
+          <select id="source">
+            <option selected="selected" value="BR">English</option>
+            <option value="FR">Spanish</option>
+            <option value="DE">German</option>
+            <option value="IN">Chinese</option>
+            <option value="JP">Japanese</option>
+          </select>
+          </form>
+          <!--http://www.bestcssbuttongenerator.com/#/NGollen7nF-->
+  			</center>
+  			<br>
+  			<center>
+           
+  			</center>
+  		</div>
+  	</div>
+
+    <div class = "more_info">
+      <a href="#top" id="scroll_link_up">
+      	<div class="less_info">
+      		<div class="see_less" id="scroll_up">
+            Try It
+          </div>
+      	</div>
+      </a>
+    <div class="main" style="background-color:#ECF0F1;">
+    <center>
+      <div class="big_text">
+        App Name
+      </div>
+      Description<br>
+      
+    </center>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="uiscript.js"></script>
+  </body>
+</html>
