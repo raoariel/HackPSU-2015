@@ -6,7 +6,7 @@ module StaticPagesHelper
 		code_original.split(/(#(.*)\n)|("""(.*)""")/).each do |x|
 			if x[0] == "#"
 				language = translator.detect(x)
-				translated = translator.translate(x,language,"es","text/html") + "\n"
+				translated = "#" + translator.translate(x,language,"es","text/html") + "\n"
 				code_translated.gsub!(x, translated)
 			elsif x.include? "\"\"\""
 				x.gsub!("\"\"\"", "")
