@@ -62,7 +62,7 @@ ul.unstyled {
    -------------------------------------- */
 
 #searchInput {
-	width: 200px;
+	width: 450px;
 }
 
 .navbar-brand {
@@ -148,7 +148,6 @@ ul.unstyled {
 .thumbnail span.glyphicon {
 	margin-right: 5px;
 }
-
 
 /* --------------------------------------
    Media Queries
