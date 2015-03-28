@@ -3,5 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def results
+  	uri = URI(params[:url])
+		@string = Net::HTTP.get(uri)
   end
 end

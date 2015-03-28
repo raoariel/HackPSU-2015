@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/results'
+  get "static_pages/results"
 
   root 'static_pages#home'
 
