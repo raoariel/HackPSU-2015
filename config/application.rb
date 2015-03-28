@@ -1,3 +1,4 @@
+# encoding: utf-8
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
@@ -21,6 +22,7 @@ module GitATranslation
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.encoding = "utf-8"
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
