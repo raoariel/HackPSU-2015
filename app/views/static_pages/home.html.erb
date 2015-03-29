@@ -5,7 +5,8 @@
 		<h1 class="mid-heading">Git A Translation</h1>
 		<%= form_tag(static_pages_results_path, class: 'url-search-form', method: :get) do %>
 			<div class="input-group">
-				<%= text_field_tag :url, nil, placeholder: 'Enter the raw github url', class: 'form-control' %>
+				<% s = truncate("Link of the GitHub file ex: https://github.com/chi6rag/MediCart/blob/master/db/schema.rb", length: 80) %>
+				<%= text_field_tag :url, nil, placeholder: "#{s}", class: 'form-control' %>
 		    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
 		    <%= submit_tag :submit, class: 'hidden' %>
 		  </div>
@@ -16,6 +17,4 @@
 		<h3>Making open source projects on Github more accessible across the world!</h3>
 		<p>Git A Translation takes in the url of a Github file and translates the docstrings, comments and other informative features into a language of your choice!</p>
 	</div>
-
-
 </div>
