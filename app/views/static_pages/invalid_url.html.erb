@@ -1,0 +1,32 @@
+<div class="invalid_url">
+	<div class="row middle-wrapper">
+		<div class="container">
+				<!-- .middle_wrapper_left -->
+				<div class="col-md-6 middle_wrapper_left">
+					<h2>404</h2>
+					<p>Invalid URL Entered</p>
+					<div class="col-md-offset-2 col-md-8">
+						<p class="info">Git A Translation is limited to <b>Python</b> and <b>Ruby</b> files. Please make sure that your GitHub file has a .py or a .rb extension to it</p>
+					</div>
+					<dv class="col-md-2"></dv>
+				</div>
+				<!-- /.middle_wrapper_left -->
+
+				<!-- .middle_wrapper_right -->
+				<div class="col-md-6 middle_wrapper_right">
+					<h4>Please enter a valid URL</h4>
+					<%= form_tag(static_pages_results_path, class: 'url-search-form', method: :get) do %>
+						<div class="input-group">
+							<% s = truncate("Link of the GitHub file eg: https://github.com/chi6rag/MediCart/blob/master/db/schema.rb", length: 80) %>
+							<%= text_field_tag :url, nil, placeholder: "#{s}", class: 'form-control' %>
+					    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+					    <%= submit_tag :submit, class: 'hidden' %>
+					  </div>
+				  <% end %>
+				</div>
+				<!-- /.middle_wrapper_left -->
+		</div>
+	</div>
+	<div class="row dummy"></div>
+</div>
+<%= render partial: 'layouts/footer' %>

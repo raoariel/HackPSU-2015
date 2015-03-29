@@ -1,7 +1,7 @@
 /* div.footer */
 div.footer {
 	height: 20vh; margin-top: 5vh; width: 100vw;
-	background-color: #7E7E7E; color: whitesmoke;
+	background-color: whitesmoke; color: #7E7E7E;
 
 
 	/* row */
@@ -12,7 +12,7 @@ div.footer {
 		transform: translateY(-50%);
 		
 		a {
-			color: whitesmoke;
+			color: #7E7E7E;
 			&:hover { text-decoration: none; }
 		}
 

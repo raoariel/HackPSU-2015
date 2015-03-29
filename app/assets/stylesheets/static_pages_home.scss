@@ -1,6 +1,7 @@
 div.static_pages_home {
 	text-align: center;
 	overflow-x: hidden;
+	min-height: 100vh;
 
 	.one {
 		height: 80vh; width: 100vw;
@@ -100,5 +101,9 @@ div.static_pages_home {
 
 	}
 	/* /#two */
+
+	.dummy {
+		height: 20vh; width: 100vw;
+	}
 
 }

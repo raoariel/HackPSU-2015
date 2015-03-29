@@ -1,0 +1,34 @@
+.invalid_url {
+	min-height: 100vh;
+	font-family: 'Muli', sans-serif;
+	color: dimgrey;
+
+	.middle-wrapper {
+		padding-top: 6em;
+
+		/* .middle_wrapper_left */
+		.middle_wrapper_left {
+			color: #FD7F7F;
+			text-align: center;
+
+			h2 { font-size: 10em; }
+			p { font-size: 1.2em; }
+			.info { color: dimgrey; }
+			
+		}
+		/* /.middle_wrapper_left */
+
+		/* .middle_wrapper_right */
+		.middle_wrapper_right {
+			padding-top: 6em;
+			text-align: center;
+		}
+		/* /.middle_wrapper_right */
+
+	}
+
+		.dummy {
+			height: 30vh; width: 100vw;
+		}
+
+}
