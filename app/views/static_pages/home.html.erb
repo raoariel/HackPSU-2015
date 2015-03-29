@@ -1,4 +1,8 @@
 <%= render partial: 'layouts/header' %>
+<%= form_tag(static_pages_results_path, class: 'pull-left', method: :get) do %>
+												<%= text_field_tag :url, nil, placeholder: 'Enter the raw github url', class: 'form-control' %>
+												<%= submit_tag :submit %>
+											<% end %>
 <%= render partial: 'layouts/carousel' %>
 
 <div class="row" id="bigCallout">
@@ -19,10 +23,7 @@
 												<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 											</form> --><!-- end navbar-form -->
 
-											<%= form_tag(static_pages_results_path, class: 'pull-left', method: :get) do %>
-												<%= text_field_tag :url, nil, placeholder: 'Enter the raw github url', class: 'form-control' %>
-												<%= submit_tag :submit %>
-											<% end %>
+											
 
 										</div><!-- end nav-collapse -->
 									</div><!-- end row -->

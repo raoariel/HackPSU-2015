@@ -5,7 +5,8 @@ class StaticPagesController < ApplicationController
 
   def results
   	uri = URI(params[:url])
+  	extension = get_extension(uri)
 		@code_original = Net::HTTP.get(uri)
-		@code_translated = run_translation(@code_original)
+		@code_translated = run_translation(@code_original, extension)
   end
 end
