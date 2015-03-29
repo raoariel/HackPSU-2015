@@ -22,7 +22,11 @@ class StaticPagesController < ApplicationController
 	##############################################################################
   private
   	def set_uri
-  		@uri = URI(params[:url])
+  		begin
+	  		@uri = URI(params[:url])
+	  	rescue URI::InvalidURIError
+	  		redirect_to static_pages_invalid_url_path
+	  	end
   	end
 
   	def get_raw_uri(uri)

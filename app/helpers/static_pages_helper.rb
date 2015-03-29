@@ -29,6 +29,8 @@ module StaticPagesHelper
 					code_translated.gsub!(x, translated)
 				end
 			end
+		else
+			redirect_to static_pages_invalid_url_path
 		end
 		code_translated
 	end
