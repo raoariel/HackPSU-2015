@@ -79,11 +79,26 @@ div.static_pages_home {
 	}
 	/* /.one */
 
-	/* .two */
-	.two {
+	/* #two */
+	#two {
+		color: rgb(134, 127, 127);
 		height: 50vh; width: 100vw;
 		background-color: whitesmoke;
+		padding: 4em;
+		font-family: 'Muli', sans-serif;
+
+		/* /.matter */
+		.matter {
+			position: relative; top: 50%;
+			transform: translateY(-60%);
+
+			h2 { font-size: 3em; }
+			p { font-size: 1.5em; padding-top: 1em; }
+
+		}
+		/* /.matter */
+
 	}
-	/* /.two */
+	/* /#two */
 
 }

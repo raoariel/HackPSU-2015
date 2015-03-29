@@ -1,0 +1,31 @@
+/* div.footer */
+div.footer {
+	height: 20vh; margin-top: 5vh; width: 100vw;
+	background-color: #7E7E7E; color: whitesmoke;
+
+
+	/* row */
+	.row {
+		text-align: center;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		
+		a {
+			color: whitesmoke;
+			&:hover { text-decoration: none; }
+		}
+
+		i {
+			padding-left: 0.8em; padding-right: 0.8em;
+		}
+
+		.fa {
+			font-size: 160%;
+		}
+
+	}
+	/* row */
+
+}
+/* /div.footer */
