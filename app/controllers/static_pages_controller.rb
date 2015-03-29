@@ -3,6 +3,7 @@ include StaticPagesHelper
 class StaticPagesController < ApplicationController
 	before_action :set_uri, only: :results
   def home
+    @languages = Language.all
   end
 
   def results
@@ -12,7 +13,8 @@ class StaticPagesController < ApplicationController
   	else
   		@raw_uri = get_raw_uri(@uri)
 			@code_original = Net::HTTP.get(@uri)
-			@code_translated = run_translation(@code_original, @extension)
+      language_code = Language.find(params[:language]).code
+			@code_translated = run_translation(@code_original, @extension, language_code)
 		end
   end
 
