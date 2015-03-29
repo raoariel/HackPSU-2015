@@ -2,6 +2,7 @@
 include StaticPagesHelper
 class StaticPagesController < ApplicationController
 	before_action :set_uri, only: :results
+
   def home
     @languages = Language.all
   end
@@ -19,6 +20,7 @@ class StaticPagesController < ApplicationController
   end
 
   def invalid_url
+    @languages = Language.all
 	end
 
 	##############################################################################
