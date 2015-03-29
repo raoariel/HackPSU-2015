@@ -1,1 +1,10 @@
-<%= simple_format(@code_translated, {}, :sanitize => false) %>
+<head>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<code class="prettyprint">
+        <%= simple_format(@code_translated, {}, :sanitize => false) %>
+
+	</code>
+</body>
