@@ -1,77 +1,20 @@
-<%= render partial: 'layouts/header' %>
-<%= form_tag(static_pages_results_path, class: 'pull-left', method: :get) do %>
-												<%= text_field_tag :url, nil, placeholder: 'Enter the raw github url', class: 'form-control' %>
-												<%= submit_tag :submit %>
-											<% end %>
-<%= render partial: 'layouts/carousel' %>
+<div class="static_pages_home">
+	<%= render partial: 'layouts/header' %>
 
-<div class="row" id="bigCallout">
-				<div class="col-12">
-					
-					<div class="well">
-						<div class="page-header">
-							<h1>Git A Translation<small> For all your #transcomment needs.</small></h1>
-						</div><!-- end page-header -->
-						
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="row">
-										<div class="nav-collapse collapse navbar-responsive-collapse">
-											<!-- <form class="navbar-form pull-left">
-												<input type="url_search" class="form-control" placeholder="https://github.com/h2oai/h2o/blob/master/py/h2o/rfprof.py" id="searchInput">
-												<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-											</form> --><!-- end navbar-form -->
+	<div class="mid-wrapper">
+		<h1 class="mid-heading">Git A Translation</h1>
+		<%= form_tag(static_pages_results_path, class: 'url-search-form', method: :get) do %>
+			<div class="input-group">
+				<%= text_field_tag :url, nil, placeholder: 'Enter the raw github url', class: 'form-control' %>
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+		    <%= submit_tag :submit, class: 'hidden' %>
+		  </div>
+	  <% end %>
+	</div>
+	<div class="bottom-text">
+		<h3>Making the thousands of open source projects on Github more accessible across the world!</h3>
+		<p>Git A Translation takes in the url of a Github file and translates the docstrings, comments and other informative features into a language of your choice!</p>
+	</div>
 
-											
 
-										</div><!-- end nav-collapse -->
-									</div><!-- end row -->
-								</div><!-- end col-sm-6 -->
-								<div class="col-sm-3">
-									<ul class="nav navbar-nav pull-right">
-										<li class="dropdown">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span> Target Language <strong class="caret"></strong></a>
-											<ul class="dropdown-menu">
-												<li>
-													<a href="#"> English</a>
-												</li>
-												
-												<li>
-													<a href="#"> Spanish</a>
-												</li>
-												
-												<li>
-													<a href="#"> German</a>
-												</li>
-											</ul>
-										</li>
-									</ul><!-- end nav pull-right -->
-								</div><!-- end col-sm-6 -->
-								<div class="col-sm-3">
-								</div><!-- end col-sm-6 -->							
-							</div><!-- end row -->
-						</div><!-- end container -->
-
-					
-						<a href="#" class="btn btn-medium btn-primary" id="alertMe">Learn more about how it works.</a>
-						<a href="https://github.com/raoariel/HackPSU-2015" class="btn btn-large btn-link">or check out the Github repository.</a>
-					</div><!-- end well -->
-					
-				</div><!-- end col-12 -->
-			</div><!-- end bigCallout -->
-		</div><!-- end container -->
-		
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<center>
-							<h6>A HackPSU Spring 2015 Project by Chirag Aggarwal and Ariel Rao</h6>
-							<h6>Powered by Microsoft Azure, Microsoft Translate, and Github - Open Source </h6>
-						</center>
-					</div><!-- end col-sm-12 -->
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</footer>
-	
+</div>
