@@ -1,9 +1,10 @@
 div.static_pages_home {
-	min-height: 90vh; width: 100vw;
+	min-height: 80vh; width: 100vw;
 	background-color: #2587B8;
 	text-align: center;
 
 	#navbar-standard {
+		height: 20vh;
 		padding: 0px; margin: 0px;
 		background-color: #2587B8;
 		border-radius: 0px;
@@ -12,8 +13,7 @@ div.static_pages_home {
 
 	/* /.mid-wrapper */
 	.mid-wrapper {
-		margin-top: 8em;
-		
+		height: 20vh; width: 100vw;
 
 		h1.mid-heading {
 			font-family: 'Arvo', serif;
@@ -59,11 +59,17 @@ div.static_pages_home {
 	}
 	/* /.mid-wrapper */
 
+	.empty-area { height: 12vh; width: 100vw; }
 
 	/* .bottom-text */
 	.bottom-text {
-		margin-top: 10em;
 		color: white;
+		transform: translateY(120%);
+		font-family: 'Muli', sans-serif;
+
+		h3 { font-size: 1.3em; }
+		p { font-size: 0.9em; }
+
 	}
 	/* /.bottom-text */
 
