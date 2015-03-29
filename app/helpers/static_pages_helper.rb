@@ -1,3 +1,4 @@
+# encoding: utf-8
 module StaticPagesHelper
 	
 	def get_extension(uri)

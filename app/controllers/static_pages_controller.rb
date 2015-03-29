@@ -1,3 +1,4 @@
+# encoding: utf-8
 include StaticPagesHelper
 class StaticPagesController < ApplicationController
   def home
