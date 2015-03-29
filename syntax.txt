@@ -1,0 +1,32 @@
+Python          .py            #
+                               """    """
+Ruby            .rb            =begin    =end
+
+
+EASIEST:
+R               .r             # 
+Perl            .pl            #    
+CoffeeScript    .coffee        #    
+Haskell         .hs            --             
+
+
+NOT HARD:
+HTML            .html          <!--     -->    
+Javascript      .js            //
+                               /*       */
+Java            .java          //
+                               /*       */
+                               /**      */
+CSS             .css           /*       */
+PHP             .php           #
+                               //
+                               /*       */
+C               .c             //
+                               /*       */
+Scala           .scala         /*       */    
+
+
+OTHER:
+Matlab          .m             %              (whole line)
+                               ...       ... (part of a line)
+C++
