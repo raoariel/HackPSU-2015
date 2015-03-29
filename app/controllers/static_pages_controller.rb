@@ -17,9 +17,9 @@ class StaticPagesController < ApplicationController
   end
 
   def invalid_url
-		fail
 	end
 
+	##############################################################################
   private
   	def set_uri
   		@uri = URI(params[:url])
@@ -28,11 +28,11 @@ class StaticPagesController < ApplicationController
   	def get_raw_uri(uri)
   		uri = uri.scheme + "://" + uri.host + uri.path
   		if uri.match(/(https:\/\/github.com\/)|(https:\/\/www.github.com\/)/)
-  			uri.gsub!('github.com', 'raw.githubusercontent.com').gsub!('/blog', '')
+  			uri.gsub!('github.com', 'raw.githubusercontent.com').gsub!('/blob', '')
   		elsif uri.match(/https:\/\/raw.githubusercontent.com\//)
 			else
 				redirect_to static_pages_invalid_url_path
 			end
-  		uri
+  		@uri = URI(uri)
   	end
 end

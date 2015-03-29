@@ -1,20 +1,32 @@
 <div class="static_pages_home">
-	<%= render partial: 'layouts/header' %>
 
-	<div class="mid-wrapper">
-		<h1 class="mid-heading">Git A Translation</h1>
-		<%= form_tag(static_pages_results_path, class: 'url-search-form', method: :get) do %>
-			<div class="input-group">
-				<% s = truncate("Link of the GitHub file ex: https://github.com/chi6rag/MediCart/blob/master/db/schema.rb", length: 80) %>
-				<%= text_field_tag :url, nil, placeholder: "#{s}", class: 'form-control' %>
-		    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-		    <%= submit_tag :submit, class: 'hidden' %>
-		  </div>
-	  <% end %>
+	<!-- div.one -->
+	<div class="one">
+		<%= render partial: 'layouts/header' %>
+		<div class="mid-wrapper">
+			<h1 class="mid-heading">Git A Translation</h1>
+			<%= form_tag(static_pages_results_path, class: 'url-search-form', method: :get) do %>
+				<div class="input-group">
+					<% s = truncate("Link of the GitHub file ex: https://github.com/chi6rag/MediCart/blob/master/db/schema.rb", length: 80) %>
+					<%= text_field_tag :url, nil, placeholder: "#{s}", class: 'form-control' %>
+			    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+			    <%= submit_tag :submit, class: 'hidden' %>
+			  </div>
+		  <% end %>
+		</div>
+		<div class="empty-area"></div>
+		<div class="bottom-text">
+			<h3>Making open source projects on Github more accessible across the world!</h3>
+			<p>Git A Translation takes in the url of a Github file and translates the docstrings, comments and other informative features into a language of your choice!</p>
+		</div>
+		<!-- /.one -->
 	</div>
-	<div class="empty-area"></div>
-	<div class="bottom-text">
-		<h3>Making open source projects on Github more accessible across the world!</h3>
-		<p>Git A Translation takes in the url of a Github file and translates the docstrings, comments and other informative features into a language of your choice!</p>
+
+	<!-- .two -->
+	<div class="two">
+		<h2>What is Git A Translation</h2>
+		<p></p>
 	</div>
+	<!-- /.two -->
+
 </div>
