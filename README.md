@@ -1,13 +1,16 @@
 HackPSU 2015 : Git a Translation
 =============
 
-####[gitatranslation.azurewebsites.net](http://gitatranslation.azurewebsites.net)
+####[gitatranslation.herokuapp.com](http://gitatranslation.herokuapp.com)
 
-Git a Translation is an open source web application which aims to make open source code more accessible by offering translations of documentation in Github code files.
+Git a Translation is a web application which aims to make open source code more accessible by offering translations of documentation in Github code files.
 
 Technology
 ------------------------------
-Supports public files on Github; Translations are powered by Microsoft Translate; Application is deployed with Heroku.
+ - Backend: Ruby on Rails
+ - Supports public files on GitHub
+ - Translations are powered by Microsoft Translate API
+ - Deployed on Heroku
 
 Team
 -----------------------------
@@ -15,4 +18,3 @@ Team
 Ariel Rao
 Chirag Aggarwal
 ```
-
