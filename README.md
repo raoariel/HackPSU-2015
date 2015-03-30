@@ -7,7 +7,7 @@ Git a Translation is an open source web application which aims to make open sour
 
 Technology
 ------------------------------
-Supports public files on Github; Translations are powered by Microsoft Translate; Application is deployed with Microsoft Azure.
+Supports public files on Github; Translations are powered by Microsoft Translate; Application is deployed with Heroku.
 
 Team
 -----------------------------
