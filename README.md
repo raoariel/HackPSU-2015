@@ -11,6 +11,10 @@ Technology
  - Supports public files on GitHub
  - Translations are powered by Microsoft Translate API
  - Deployed on Heroku
+ 
+ Recognition
+------------------------------
+First Place Virtual Hack
 
 Team
 -----------------------------
