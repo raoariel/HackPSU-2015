@@ -12,7 +12,7 @@ Technology
  - Translations are powered by Microsoft Translate API
  - Deployed on Heroku
  
- Recognition
+Recognition
 ------------------------------
 First Place Virtual Hack
 
